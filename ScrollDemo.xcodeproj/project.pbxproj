@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		633ADE171D87FD7C00EDF336 /* InfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 633ADE121D87FD7C00EDF336 /* InfiniteScrollView.m */; };
+		633ADE181D87FD7C00EDF336 /* TopCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 633ADE141D87FD7C00EDF336 /* TopCollectionView.m */; };
+		633ADE191D87FD7C00EDF336 /* TopTitleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 633ADE161D87FD7C00EDF336 /* TopTitleModel.m */; };
 		638E9C8D1D2A25580010DC74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 638E9C8C1D2A25580010DC74 /* main.m */; };
 		638E9C901D2A25580010DC74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 638E9C8F1D2A25580010DC74 /* AppDelegate.m */; };
 		638E9C931D2A25580010DC74 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638E9C921D2A25580010DC74 /* ViewController.m */; };
@@ -15,9 +18,6 @@
 		638E9C9B1D2A25580010DC74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638E9C991D2A25580010DC74 /* LaunchScreen.storyboard */; };
 		638E9CA61D2A25580010DC74 /* ScrollDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 638E9CA51D2A25580010DC74 /* ScrollDemoTests.m */; };
 		638E9CB11D2A25580010DC74 /* ScrollDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 638E9CB01D2A25580010DC74 /* ScrollDemoUITests.m */; };
-		63C2D73F1D2D080E00644628 /* InfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C2D73A1D2D080E00644628 /* InfiniteScrollView.m */; };
-		63C2D7401D2D080E00644628 /* TopCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C2D73C1D2D080E00644628 /* TopCollectionView.m */; };
-		63C2D7411D2D080E00644628 /* TopTitleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C2D73E1D2D080E00644628 /* TopTitleModel.m */; };
 		63F882E31D3385DC002CFD13 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F882E21D3385DC002CFD13 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		633ADE111D87FD7C00EDF336 /* InfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollView.h; sourceTree = "<group>"; };
+		633ADE121D87FD7C00EDF336 /* InfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollView.m; sourceTree = "<group>"; };
+		633ADE131D87FD7C00EDF336 /* TopCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopCollectionView.h; sourceTree = "<group>"; };
+		633ADE141D87FD7C00EDF336 /* TopCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopCollectionView.m; sourceTree = "<group>"; };
+		633ADE151D87FD7C00EDF336 /* TopTitleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopTitleModel.h; sourceTree = "<group>"; };
+		633ADE161D87FD7C00EDF336 /* TopTitleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopTitleModel.m; sourceTree = "<group>"; };
 		638E9C881D2A25580010DC74 /* ScrollDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		638E9C8C1D2A25580010DC74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		638E9C8E1D2A25580010DC74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,12 +61,6 @@
 		638E9CAC1D2A25580010DC74 /* ScrollDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		638E9CB01D2A25580010DC74 /* ScrollDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollDemoUITests.m; sourceTree = "<group>"; };
 		638E9CB21D2A25580010DC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63C2D7391D2D080E00644628 /* InfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollView.h; sourceTree = "<group>"; };
-		63C2D73A1D2D080E00644628 /* InfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollView.m; sourceTree = "<group>"; };
-		63C2D73B1D2D080E00644628 /* TopCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopCollectionView.h; sourceTree = "<group>"; };
-		63C2D73C1D2D080E00644628 /* TopCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopCollectionView.m; sourceTree = "<group>"; };
-		63C2D73D1D2D080E00644628 /* TopTitleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopTitleModel.h; sourceTree = "<group>"; };
-		63C2D73E1D2D080E00644628 /* TopTitleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopTitleModel.m; sourceTree = "<group>"; };
 		63F882E11D3385DC002CFD13 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		63F882E21D3385DC002CFD13 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +90,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		633ADE101D87FD7C00EDF336 /* ScrollLib */ = {
+			isa = PBXGroup;
+			children = (
+				633ADE111D87FD7C00EDF336 /* InfiniteScrollView.h */,
+				633ADE121D87FD7C00EDF336 /* InfiniteScrollView.m */,
+				633ADE131D87FD7C00EDF336 /* TopCollectionView.h */,
+				633ADE141D87FD7C00EDF336 /* TopCollectionView.m */,
+				633ADE151D87FD7C00EDF336 /* TopTitleModel.h */,
+				633ADE161D87FD7C00EDF336 /* TopTitleModel.m */,
+			);
+			path = ScrollLib;
+			sourceTree = SOURCE_ROOT;
+		};
 		638E9C7F1D2A25580010DC74 = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +126,7 @@
 		638E9C8A1D2A25580010DC74 /* ScrollDemo */ = {
 			isa = PBXGroup;
 			children = (
-				63C2D7381D2D080E00644628 /* ScrollLib */,
+				633ADE101D87FD7C00EDF336 /* ScrollLib */,
 				638E9C8E1D2A25580010DC74 /* AppDelegate.h */,
 				638E9C8F1D2A25580010DC74 /* AppDelegate.m */,
 				638E9C911D2A25580010DC74 /* ViewController.h */,
@@ -153,19 +166,6 @@
 				638E9CB21D2A25580010DC74 /* Info.plist */,
 			);
 			path = ScrollDemoUITests;
-			sourceTree = "<group>";
-		};
-		63C2D7381D2D080E00644628 /* ScrollLib */ = {
-			isa = PBXGroup;
-			children = (
-				63C2D7391D2D080E00644628 /* InfiniteScrollView.h */,
-				63C2D73A1D2D080E00644628 /* InfiniteScrollView.m */,
-				63C2D73B1D2D080E00644628 /* TopCollectionView.h */,
-				63C2D73C1D2D080E00644628 /* TopCollectionView.m */,
-				63C2D73D1D2D080E00644628 /* TopTitleModel.h */,
-				63C2D73E1D2D080E00644628 /* TopTitleModel.m */,
-			);
-			path = ScrollLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,13 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63C2D7411D2D080E00644628 /* TopTitleModel.m in Sources */,
 				638E9C931D2A25580010DC74 /* ViewController.m in Sources */,
+				633ADE171D87FD7C00EDF336 /* InfiniteScrollView.m in Sources */,
 				63F882E31D3385DC002CFD13 /* TestViewController.m in Sources */,
 				638E9C901D2A25580010DC74 /* AppDelegate.m in Sources */,
-				63C2D7401D2D080E00644628 /* TopCollectionView.m in Sources */,
+				633ADE181D87FD7C00EDF336 /* TopCollectionView.m in Sources */,
 				638E9C8D1D2A25580010DC74 /* main.m in Sources */,
-				63C2D73F1D2D080E00644628 /* InfiniteScrollView.m in Sources */,
+				633ADE191D87FD7C00EDF336 /* TopTitleModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
