@@ -78,9 +78,11 @@ typedef void(^CircleLayoutFinalScrollIndexPath)(NSIndexPath *indexPath);
         
         UIButton *titleButton = [[UIButton alloc]init];
         
+        titleButton.titleEdgeInsets = UIEdgeInsetsMake(0, 3, 0, -3);
+        
         titleButton.enabled = NO;
         
-//        label.textAlignment = NSTextAlignmentCenter;
+        //        label.textAlignment = NSTextAlignmentCenter;
         
         _titleButton = titleButton;
         
@@ -129,20 +131,20 @@ typedef void(^CircleLayoutFinalScrollIndexPath)(NSIndexPath *indexPath);
         
         self.titleButton.titleLabel.font = titleModel.selectedFont;
         
-//        self.label.textColor = titleModel.selectedColor;
-//        
-//        self.label.font = titleModel.selectedFont;
+        //        self.label.textColor = titleModel.selectedColor;
+        //
+        //        self.label.font = titleModel.selectedFont;
         
     }else{
         
         [self.titleButton setTitleColor:titleModel.normalColor forState:UIControlStateNormal];
         
         self.titleButton.titleLabel.font = titleModel.normalFont;
-
         
-//        self.label.textColor = titleModel.normalColor;
-//        
-//        self.label.font = titleModel.normalFont;
+        
+        //        self.label.textColor = titleModel.normalColor;
+        //
+        //        self.label.font = titleModel.normalFont;
         
     }
     
@@ -153,16 +155,16 @@ typedef void(^CircleLayoutFinalScrollIndexPath)(NSIndexPath *indexPath);
         [self.titleButton setImage:[UIImage imageNamed:titleModel.leftIconName] forState:UIControlStateNormal];
         
     }else{
-    
+        
         [self.titleButton setImage:nil forState:UIControlStateNormal];
-
+        
     }
     
-//    CGSize size = [self.titleButton.title sizeWithAttributes:@{NSFontAttributeName:self.label.font}];
+    //    CGSize size = [self.titleButton.title sizeWithAttributes:@{NSFontAttributeName:self.label.font}];
     
     CGFloat width = self.frame.size.width;
     
-//    CGFloat width = size.width +5;
+    //    CGFloat width = size.width +5;
     
     if (!self.line.hidden) {
         
@@ -213,7 +215,7 @@ static NSString *cellID = @"cellID";
                 weakSelf.currentPage = indexPath.row;
                 
             }
-        
+            
         };
         
         self.layout = layout;
@@ -223,17 +225,17 @@ static NSString *cellID = @"cellID";
         layout.minimumLineSpacing = 0;
         
         [self registerClass:[TopTitleCollectionCell class] forCellWithReuseIdentifier:cellID];
-
+        
     }
     return self;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-
+    
     if (self.titleModels.count ==1) {
         return CGSizeMake(self.frame.size.width, self.frame.size.height);
     }
-    return CGSizeMake(self.frame.size.width*3/7.0, self.frame.size.height);
+    return CGSizeMake(self.frame.size.width*6/13.0, self.frame.size.height);
 }
 
 
@@ -245,7 +247,7 @@ static NSString *cellID = @"cellID";
     if (!titleModels.count) {
         return;
     }
-
+    
     NSInteger scrollIndex = INT16_MAX/2;
     
     NSInteger index = INT16_MAX/2;
@@ -276,8 +278,8 @@ static NSString *cellID = @"cellID";
     [self scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:self.currentPage inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
     
     [self reloadData];
-
-
+    
+    
 }
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
@@ -348,7 +350,7 @@ static NSString *cellID = @"cellID";
         
         indexP = [NSIndexPath indexPathForRow:self.currentPage + 1 inSection:0];
     }
-
+    
     [self scrollToItemAtIndexPath:indexP atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
     
     
@@ -357,7 +359,7 @@ static NSString *cellID = @"cellID";
     self.currentPage = indexP.row;
     
     [self reloadData];
-
+    
 }
 -(void)scrollToCurrentPage{
     
