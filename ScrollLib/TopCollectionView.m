@@ -65,7 +65,7 @@ typedef void(^CircleLayoutFinalScrollIndexPath)(NSIndexPath *indexPath);
 
 @interface TopTitleCollectionCell : UICollectionViewCell
 @property (nonatomic, strong) TopTitleModel *titleModel;
-@property (nonatomic, weak) UILabel *label;
+@property (nonatomic, weak) UIButton *titleButton;
 @property (nonatomic, weak) UIView *line;
 @end
 @implementation TopTitleCollectionCell
@@ -76,13 +76,15 @@ typedef void(^CircleLayoutFinalScrollIndexPath)(NSIndexPath *indexPath);
     
     if (self) {
         
-        UILabel *label = [[UILabel alloc]init];
+        UIButton *titleButton = [[UIButton alloc]init];
         
-        label.textAlignment = NSTextAlignmentCenter;
+        titleButton.enabled = NO;
         
-        _label = label;
+//        label.textAlignment = NSTextAlignmentCenter;
         
-        [self.contentView addSubview:label];
+        _titleButton = titleButton;
+        
+        [self.contentView addSubview:titleButton];
         
         UIView *line = [[UIView alloc]init];
         
@@ -101,7 +103,7 @@ typedef void(^CircleLayoutFinalScrollIndexPath)(NSIndexPath *indexPath);
     
     [super layoutSubviews];
     
-    self.label.frame = self.bounds;
+    self.titleButton.frame = self.bounds;
     
 }
 
@@ -123,23 +125,44 @@ typedef void(^CircleLayoutFinalScrollIndexPath)(NSIndexPath *indexPath);
     
     if (titleModel.isSelected) {
         
-        self.label.textColor = titleModel.selectedColor;
+        [self.titleButton setTitleColor:titleModel.selectedColor forState:UIControlStateNormal];
         
-        self.label.font = titleModel.selectedFont;
+        self.titleButton.titleLabel.font = titleModel.selectedFont;
+        
+//        self.label.textColor = titleModel.selectedColor;
+//        
+//        self.label.font = titleModel.selectedFont;
         
     }else{
         
-        self.label.textColor = titleModel.normalColor;
+        [self.titleButton setTitleColor:titleModel.normalColor forState:UIControlStateNormal];
         
-        self.label.font = titleModel.normalFont;
+        self.titleButton.titleLabel.font = titleModel.normalFont;
+
+        
+//        self.label.textColor = titleModel.normalColor;
+//        
+//        self.label.font = titleModel.normalFont;
         
     }
     
-    self.label.text = titleModel.title;
+    [self.titleButton setTitle:titleModel.title forState:UIControlStateNormal];
     
-    CGSize size = [self.label.text sizeWithAttributes:@{NSFontAttributeName:self.label.font}];
+    if (titleModel.leftIconName && titleModel.leftIconName.length) {
+        
+        [self.titleButton setImage:[UIImage imageNamed:titleModel.leftIconName] forState:UIControlStateNormal];
+        
+    }else{
     
-    CGFloat width = size.width +5;
+        [self.titleButton setImage:nil forState:UIControlStateNormal];
+
+    }
+    
+//    CGSize size = [self.titleButton.title sizeWithAttributes:@{NSFontAttributeName:self.label.font}];
+    
+    CGFloat width = self.frame.size.width;
+    
+//    CGFloat width = size.width +5;
     
     if (!self.line.hidden) {
         

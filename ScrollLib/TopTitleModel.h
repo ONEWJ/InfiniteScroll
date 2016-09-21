@@ -16,6 +16,9 @@
 @property (nonatomic, strong) UIFont *selectedFont;
 @property (nonatomic, strong) UIColor *lineColor;
 
+@property (nonatomic, copy) NSString *leftIconName;
+
+
 
 @property (nonatomic, assign, getter=isSelected) BOOL select;
 @property (nonatomic, assign, getter=isShowLineWhenSelected) BOOL showLineWhenSelect;

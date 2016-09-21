@@ -49,6 +49,8 @@
         model.lineColor = WJColor(222, 90, 20);
         model.normalFont = [UIFont systemFontOfSize:12];
         model.selectedFont = [UIFont systemFontOfSize:14];
+        
+        model.leftIconName = @"leftImage";
     }
     
     TopCollectionView *collection = [[TopCollectionView alloc]initWithFrame:CGRectMake(0, 30, self.view.frame.size.width, 50) collectionViewLayout:[[UICollectionViewFlowLayout alloc]init]];

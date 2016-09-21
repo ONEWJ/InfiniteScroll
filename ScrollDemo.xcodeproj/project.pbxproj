@@ -10,6 +10,7 @@
 		633ADE171D87FD7C00EDF336 /* InfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 633ADE121D87FD7C00EDF336 /* InfiniteScrollView.m */; };
 		633ADE181D87FD7C00EDF336 /* TopCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 633ADE141D87FD7C00EDF336 /* TopCollectionView.m */; };
 		633ADE191D87FD7C00EDF336 /* TopTitleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 633ADE161D87FD7C00EDF336 /* TopTitleModel.m */; };
+		6354FD1B1D92312000246127 /* leftImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6354FD1A1D92312000246127 /* leftImage@2x.png */; };
 		638E9C8D1D2A25580010DC74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 638E9C8C1D2A25580010DC74 /* main.m */; };
 		638E9C901D2A25580010DC74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 638E9C8F1D2A25580010DC74 /* AppDelegate.m */; };
 		638E9C931D2A25580010DC74 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638E9C921D2A25580010DC74 /* ViewController.m */; };
@@ -45,6 +46,7 @@
 		633ADE141D87FD7C00EDF336 /* TopCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopCollectionView.m; sourceTree = "<group>"; };
 		633ADE151D87FD7C00EDF336 /* TopTitleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopTitleModel.h; sourceTree = "<group>"; };
 		633ADE161D87FD7C00EDF336 /* TopTitleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopTitleModel.m; sourceTree = "<group>"; };
+		6354FD1A1D92312000246127 /* leftImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftImage@2x.png"; sourceTree = "<group>"; };
 		638E9C881D2A25580010DC74 /* ScrollDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		638E9C8C1D2A25580010DC74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		638E9C8E1D2A25580010DC74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		638E9C8A1D2A25580010DC74 /* ScrollDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6354FD1A1D92312000246127 /* leftImage@2x.png */,
 				633ADE101D87FD7C00EDF336 /* ScrollLib */,
 				638E9C8E1D2A25580010DC74 /* AppDelegate.h */,
 				638E9C8F1D2A25580010DC74 /* AppDelegate.m */,
@@ -276,6 +279,7 @@
 			files = (
 				638E9C9B1D2A25580010DC74 /* LaunchScreen.storyboard in Resources */,
 				638E9C981D2A25580010DC74 /* Assets.xcassets in Resources */,
+				6354FD1B1D92312000246127 /* leftImage@2x.png in Resources */,
 				638E9C961D2A25580010DC74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
