@@ -80,9 +80,9 @@ typedef void(^CircleLayoutFinalScrollIndexPath)(NSIndexPath *indexPath);
         
         titleButton.titleEdgeInsets = UIEdgeInsetsMake(0, 3, 0, -3);
         
-        titleButton.enabled = NO;
+        titleButton.userInteractionEnabled = NO;
         
-        //        label.textAlignment = NSTextAlignmentCenter;
+//        titleButton.enabled = NO;
         
         _titleButton = titleButton;
         
@@ -131,40 +131,26 @@ typedef void(^CircleLayoutFinalScrollIndexPath)(NSIndexPath *indexPath);
         
         self.titleButton.titleLabel.font = titleModel.selectedFont;
         
-        //        self.label.textColor = titleModel.selectedColor;
-        //
-        //        self.label.font = titleModel.selectedFont;
-        
     }else{
         
         [self.titleButton setTitleColor:titleModel.normalColor forState:UIControlStateNormal];
         
         self.titleButton.titleLabel.font = titleModel.normalFont;
         
-        
-        //        self.label.textColor = titleModel.normalColor;
-        //
-        //        self.label.font = titleModel.normalFont;
-        
     }
     
     [self.titleButton setTitle:titleModel.title forState:UIControlStateNormal];
     
-    if (titleModel.leftIconName && titleModel.leftIconName.length) {
+    if (titleModel.leftIconName && titleModel.leftIconName.length &&titleModel.isSelected) {
         
         [self.titleButton setImage:[UIImage imageNamed:titleModel.leftIconName] forState:UIControlStateNormal];
         
     }else{
         
         [self.titleButton setImage:nil forState:UIControlStateNormal];
-        
     }
     
-    //    CGSize size = [self.titleButton.title sizeWithAttributes:@{NSFontAttributeName:self.label.font}];
-    
     CGFloat width = self.frame.size.width;
-    
-    //    CGFloat width = size.width +5;
     
     if (!self.line.hidden) {
         
