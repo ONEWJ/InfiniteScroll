@@ -62,7 +62,7 @@
     }
     
     //代理不要放在initWithFrame中
-     _scrollView.delegate = self;
+    _scrollView.delegate = self;
 }
 
 
@@ -74,7 +74,7 @@
         
         _pageCount = [self.delegate numberOfContentViewsInInfiniteScrollView:self];
         
-         [self resetContentViews];
+        [self resetContentViews];
         
     }else{
         NSAssert(NO, @"请实现numberOfContentViewsInInfiniteScrollView:");
@@ -149,7 +149,7 @@
             
             if (_pageCount == 2) {
                 
-                 previousContentView = [self duplicate:previousContentView];
+                previousContentView = [self duplicate:previousContentView];
             }
             
             UIView *currentContentView = [self.delegate infiniteScrollView:self contentViewAtIndex:_currentPage];

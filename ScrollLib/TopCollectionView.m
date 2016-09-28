@@ -80,13 +80,14 @@ typedef void(^CircleLayoutFinalScrollIndexPath)(NSIndexPath *indexPath);
         
         titleButton.titleEdgeInsets = UIEdgeInsetsMake(0, 3, 0, -3);
         
-        titleButton.userInteractionEnabled = NO;
+        [titleButton.imageView setContentMode:UIViewContentModeScaleAspectFit];
         
-//        titleButton.enabled = NO;
+        titleButton.userInteractionEnabled = NO;
         
         _titleButton = titleButton;
         
         [self.contentView addSubview:titleButton];
+        
         
         UIView *line = [[UIView alloc]init];
         
@@ -141,13 +142,22 @@ typedef void(^CircleLayoutFinalScrollIndexPath)(NSIndexPath *indexPath);
     
     [self.titleButton setTitle:titleModel.title forState:UIControlStateNormal];
     
-    if (titleModel.leftIconName && titleModel.leftIconName.length &&titleModel.isSelected) {
+    [self.titleButton setImage:nil forState:UIControlStateNormal];
+    
+    if (titleModel.isSelected) {
         
-        [self.titleButton setImage:[UIImage imageNamed:titleModel.leftIconName] forState:UIControlStateNormal];
+        if (titleModel.selectedLeftIconName && titleModel.selectedLeftIconName.length){
+            
+            [self.titleButton setImage:[UIImage imageNamed:titleModel.selectedLeftIconName] forState:UIControlStateNormal];
+        }
         
     }else{
         
-        [self.titleButton setImage:nil forState:UIControlStateNormal];
+        if (titleModel.normalLeftIconName && titleModel.normalLeftIconName.length){
+            
+            [self.titleButton setImage:[UIImage imageNamed:titleModel.normalLeftIconName] forState:UIControlStateNormal];
+        }
+        
     }
     
     CGFloat width = self.frame.size.width;

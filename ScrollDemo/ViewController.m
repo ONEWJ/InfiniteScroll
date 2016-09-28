@@ -50,7 +50,9 @@
         model.normalFont = [UIFont systemFontOfSize:12];
         model.selectedFont = [UIFont systemFontOfSize:14];
         
-        model.leftIconName = @"leftImage";
+        model.selectedLeftIconName = @"leftImage";
+        
+        
     }
     
     TopCollectionView *collection = [[TopCollectionView alloc]initWithFrame:CGRectMake(0, 30, self.view.frame.size.width, 50) collectionViewLayout:[[UICollectionViewFlowLayout alloc]init]];

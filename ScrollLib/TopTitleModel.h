@@ -16,8 +16,8 @@
 @property (nonatomic, strong) UIFont *selectedFont;
 @property (nonatomic, strong) UIColor *lineColor;
 
-@property (nonatomic, copy) NSString *leftIconName;
-
+@property (nonatomic, copy) NSString *selectedLeftIconName;
+@property (nonatomic, copy) NSString *normalLeftIconName;
 
 
 @property (nonatomic, assign, getter=isSelected) BOOL select;
